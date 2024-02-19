@@ -1,0 +1,89 @@
+/* Updated CSS with simplified design */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.calculator {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Set your desired background color */
+    overflow: hidden;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333; /* Set your desired heading color */
+}
+
+#display {
+    width: 80%; /* Increase the width for a wider result display */
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5; /* Set your desired background color */
+    color: #333; /* Set your desired text color */
+    text-align: right;
+    outline: none;
+}
+
+#result {
+    width: 80%; /* Increase the width for a wider result display */
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background-color: #f5f5f5; /* Set your desired background color */
+    color: #2196f3; /* Set your desired result text color */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; /* Adjust the gap as needed for spacing between buttons */
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Adjust the margin-bottom for spacing under buttons */
+}
+
+/* Different background colors for numbers and functions */
+button.number {
+    background-color: #4caf50; /* Green color for numbers */
+    color: #fff;
+}
+
+button.function {
+    background-color: #ff9800; /* Orange color for functions */
+    color: #fff;
+}
+
+button:active {
+    background-color: #ccc;
+}
+
+/* Larger equal sign button */
+button.equal {
+    grid-column: span 2;
+    background-color: #2196f3; /* Blue color for the equal sign */
+    color: #fff;
+}
